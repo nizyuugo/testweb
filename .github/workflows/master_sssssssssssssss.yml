@@ -3,11 +3,11 @@ name: Deploy to Azure App Service
 on:
   push:
     branches:
-      - main   # デプロイをトリガーするブランチを指定（例えばmain）
+      - master   # デプロイをトリガーするブランチを指定（例えばmain）
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows
 
     steps:
       # 1. リポジトリのチェックアウト
