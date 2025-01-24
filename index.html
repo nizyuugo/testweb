@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>おしゃれなホームページ</title>
+  <title>名古屋グランパスエイトファンサイト</title>
   <style>
     /* リセットCSS */
     * {
@@ -15,70 +15,90 @@
 
     body {
       font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-      background-color: #f4f4f4;
+      background-color: #fafafa;
       color: #333;
+      line-height: 1.6;
     }
 
+    /* ヘッダー */
     header {
-      background: linear-gradient(45deg, #ff7e5f, #feb47b);
-      padding: 30px;
-      text-align: center;
+      background-color: #d7002e; /* グランパスの赤 */
       color: white;
+      padding: 20px;
+      text-align: center;
     }
 
     header h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       letter-spacing: 2px;
     }
 
+    /* ナビゲーション */
     nav {
-      background: #333;
-      color: white;
-      padding: 10px 0;
+      background-color: #333;
+      padding: 15px;
       text-align: center;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 20px;
       font-size: 1.1rem;
     }
 
     nav a:hover {
-      color: #ff7e5f;
+      color: #d7002e;
     }
 
+    /* コンテンツエリア */
     .content {
+      padding: 40px 15%;
       display: flex;
-      justify-content: space-between;
-      padding: 40px 10%;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
     }
 
     .content .section {
-      width: 30%;
+      width: 100%;
+      max-width: 350px;
       background-color: white;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .content .section h2 {
-      font-size: 2rem;
-      color: #ff7e5f;
+      font-size: 1.8rem;
+      color: #d7002e;
+      margin-bottom: 15px;
     }
 
+    .content .section p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    /* セクションホバー効果 */
+    .content .section:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* フッター */
     .footer {
-      text-align: center;
-      padding: 20px;
       background-color: #333;
       color: white;
+      text-align: center;
+      padding: 20px;
       font-size: 0.9rem;
     }
 
     .footer a {
-      color: #ff7e5f;
+      color: #d7002e;
       text-decoration: none;
     }
 
@@ -86,40 +106,59 @@
       text-decoration: underline;
     }
 
+    /* レスポンシブデザイン */
+    @media (max-width: 768px) {
+      .content {
+        padding: 20px 5%;
+      }
+
+      .content .section {
+        width: 100%;
+      }
+
+      nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>おしゃれなホームページ</h1>
+    <h1>名古屋グランパスエイトファンサイト</h1>
   </header>
 
   <nav>
     <a href="#">ホーム</a>
-    <a href="#">サービス</a>
-    <a href="#">ポートフォリオ</a>
+    <a href="#">試合情報</a>
+    <a href="#">ファン交流</a>
     <a href="#">お問い合わせ</a>
   </nav>
 
   <div class="content">
     <div class="section">
-      <h2>セクション 1</h2>
-      <p>このセクションでは、簡単な説明や画像を追加できます。視覚的に魅力的なコンテンツを追加することで、ユーザーの興味を引きます。</p>
+      <h2>最新試合結果</h2>
+      <p>名古屋グランパスエイトの最新試合の結果をお届けします。</p>
     </div>
 
     <div class="section">
-      <h2>セクション 2</h2>
-      <p>あなたのサービスや製品に関する詳細な情報を提供するために、このセクションを使用できます。魅力的なレイアウトで情報を整理しましょう。</p>
+      <h2>ファン交流</h2>
+      <p>グランパスファン同士の交流の場として、掲示板やイベント情報を提供します。</p>
     </div>
 
     <div class="section">
-      <h2>セクション 3</h2>
-      <p>最後に、このセクションでユーザーに呼びかけるメッセージやアクションを促す要素を追加できます。</p>
+      <h2>クラブニュース</h2>
+      <p>名古屋グランパスの最新ニュースや、選手のインタビュー記事などを掲載します。</p>
     </div>
   </div>
 
   <div class="footer">
-    <p>© 2025 おしゃれなホームページ. <a href="#">プライバシーポリシー</a> | <a href="#">利用規約</a></p>
+    <p>© 2025 名古屋グランパスエイトファンサイト | <a href="#">プライバシーポリシー</a> | <a href="#">利用規約</a></p>
   </div>
 
 </body>
